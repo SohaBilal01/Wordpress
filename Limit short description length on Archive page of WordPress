@@ -1,0 +1,21 @@
+If you are roaming to get better solution for your query, Don't worry you're at the right place.
+In order to limit the short description's length on your archive page of WordPress, 
+which usually don't provide any ability to limit the length unless hiding them.
+you might be thinking to choose plugin but to increase your website speed and optimization, prefer manual way.
+You just need to start following the given steps.
+
+Step 1: Select the short description's class from inspect elements.
+Step 2: you just have to open your custom css section throught customization.
+Step 3: write code inside your class bracket:
+
+.ast-woo-shop-product-description {
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 3;
+overflow: hidden;
+height: 90px
+} ;
+
+These five lines will save your life.
+-webkit-line-clamp: 3 define the text will occupy 3 lines total and overflow: hidden is very important part,
+ as it wont allow the other lines to overlap on these three lines. Just to save you life, assign height to the class as it will not make design look bizarre.
